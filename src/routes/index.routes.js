@@ -4,7 +4,7 @@ import Task from '../models/Task';
 const router = Router();
 
 router.get('/', async (req, res) => {
-//find para buascar objetos dentro de la conleccion.
+//find para buascar objetos dentro de la coleccion.
 //lean sirve para que devuelva objetos de js.
 
     const tasks = await Task.find().lean();
