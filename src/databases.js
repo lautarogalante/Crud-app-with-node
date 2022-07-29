@@ -1,8 +1,8 @@
 import { connect } from "mongoose";
-//conexion a la base de datos
+import { MONGODB_URI } from './config'; 
 (async () => {
     try {
-    const db = await connect("mongodb://localhost:27017/crud-mongo");
+    const db = await connect(MONGODB_URI);
     console.log("DB conected: ", db.connection.name);   
     }catch(error){
         console.error(error)

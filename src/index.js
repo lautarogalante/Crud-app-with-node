@@ -1,7 +1,7 @@
 import app from './app';
 import './databases';
+import { PORT } from './config';
 
-const port = 3000;
-app.listen(port, () => {
-    console.log(`Server on port: ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server on port: ${PORT}`);
 });
